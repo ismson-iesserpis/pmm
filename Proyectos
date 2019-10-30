@@ -1,3 +1,7 @@
 MiPrimerDia: Aplicación con ToggleButton para reproducir música
 
 ObjetosEntreActividades: Aplicación para pasar los datos de una persona mediante el objeto Persona a otra actividad, la foto se carga desde la galería
+
+SpinnerPersona: Spinner que muestra datos de un objeto
+
+ListaObjetos: ListView que muestra datos de un objeto
