@@ -5,3 +5,5 @@ ObjetosEntreActividades: Aplicación para pasar los datos de una persona mediant
 SpinnerPersona: Spinner que muestra datos de un objeto
 
 ListaObjetos: ListView que muestra datos de un objeto
+
+SpinnerConLista: Spinner que permite elegir un objeto y una lista que muestra la información del seleccionado
