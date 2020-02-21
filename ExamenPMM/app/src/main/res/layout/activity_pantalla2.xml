@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla2">
+
+    <TextView
+        android:id="@+id/p2_pruebas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALQUILER\nMEDIOS MOVIDIDAD"
+        android:textColor="#FFAAF1"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/p2_imagenTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/p2_imagenTitulo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/movilidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spVehiculos"
+        android:layout_width="225dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="157dp"
+        android:layout_height="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spVehiculos"
+        app:layout_constraintTop_toTopOf="@+id/spVehiculos">
+
+        <RadioButton
+            android:id="@+id/rbSinSeguro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sin seguro" />
+
+        <RadioButton
+            android:id="@+id/rbConSeguro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seguro COMPLETO" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/extra2"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:text="Incluye GPS"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/extra1"
+        app:layout_constraintTop_toBottomOf="@+id/spVehiculos" />
+
+    <CheckBox
+        android:id="@+id/extra3"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Más Extras"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/extra2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/extra2"
+        app:layout_constraintTop_toTopOf="@+id/extra2" />
+
+    <CheckBox
+        android:id="@+id/extra1"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Casco/Guantes"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/extra2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/extra2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextNumDias"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extra2" />
+
+    <Button
+        android:id="@+id/btnTotalPrecio"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Total Precio"
+        app:layout_constraintEnd_toStartOf="@+id/textTotalPrecio"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumDias" />
+
+    <TextView
+        android:id="@+id/textTotalPrecio"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTotalPrecio" />
+
+    <Button
+        android:id="@+id/botonFactura"
+        android:layout_width="366dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:text="Factura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTotalPrecio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
