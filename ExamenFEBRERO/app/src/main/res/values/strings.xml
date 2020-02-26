@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExamenPDM</string>
+    <string name="dataError">Error en la base de datos</string>
+    <string name="alrtDelete">Seguro que quieres borrar</string>
+    <string name="alrtDeleteEntry">test</string>
+    <string name="pending">Tareas de MANTENIMIENTO</string>
+    <string name="lstNoElements">No hay elementos</string>
+    <string name="identificator">Identificador</string>
+    <string name="element">Elemento</string>
+    <string name="place">Lugar</string>
+    <string name="importance">Importancia</string>
+    <string name="description">Descripcion</string>
+    <string name="save">Guardar</string>
+    <string name="newItem">Nuevo</string>
+    <string name="stats">Estadisticas</string>
+    <string name="editItem">Editar</string>
+    <string name="deleteItem">Borrar</string>
+</resources>
